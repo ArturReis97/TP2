@@ -15,7 +15,7 @@ public class ShoppingList {
     //Declarar Lista utilizador
     private List<User> UserList = new ArrayList<>();
 
-    public List<User> getUserList() {
+        public List<User> getUserList() {
         return UserList;
     }
     public void setUserList(List<User> userList) {
