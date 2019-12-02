@@ -11,7 +11,20 @@ public class ShoppingList {
     //Declaramos um arrayList user da classe User
     //private User userList ;
 
+//-------lista 3 teste
+private List<Product> ProductList3 = new ArrayList<>();
 
+    public List<Product> getProductList3() {
+        return ProductList3;
+    }
+
+    public void setProductList3(List<Product> productList3) {
+        this.ProductList3 = productList3;
+    }
+
+
+
+    //---------------
     //Declarar Lista utilizador
     private List<User> UserList = new ArrayList<>();
 
@@ -59,6 +72,24 @@ public class ShoppingList {
 
         return total;
     }
+
+    // impromir o detalhe
+public String GetImprimirDD()
+{
+    String dd;
+
+    for (int i=0;i<getProductList2().size();i++)
+    {
+
+
+        System.out.println(ProductList2.get(i));
+
+                dd = ProductList2.get(i);
+        return dd;
+    }
+}
+
+
 
     //Declarar Lista produtos 2
     private List<Product> ProductList2 = new ArrayList<>();
@@ -116,13 +147,17 @@ public class ShoppingList {
     }
 
 
+
+
+
     // Imprimir
     @Override
     public String toString() {
         return "Listname " + getName() + "\n" +
                 "TotalProdutos " + getTotalOfProducts() + "\n" +
                 "TotalProdutosNoCarrinho " + getTotalOfProductsOnShoppingCart() + "\n" +
-                "percentagemofComplete " + GetPercentageCompleted()
+                "percentagemofComplete " + GetPercentageCompleted()+ "\n" +
+                "descricoes dos produtos na lista carrinho" + GetImprimirDD()
 
                 ;
     }

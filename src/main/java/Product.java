@@ -75,12 +75,25 @@ public class Product
 
     //construtores
 
-    public Product(String name, String description, String picture, Category category, Double price, Double unityType) {
+    public Product(String name, String description, String descricaoDetalhada,String picture, Category category, Double price, Double unityType) {
         this.name = name;
         this.description = description;
+        this.descricaoDetalhada = descricaoDetalhada;
         this.picture = picture;
         this.category = category;
         this.price = price;
         this.unityType = unityType;
+
+    }
+
+
+    // teste oral
+    private String descricaoDetalhada;
+
+    public String getDescricaoDetalhada() {
+        return descricaoDetalhada;
+    }
+    public void setDescricaoDetalhada(String descricaoDetalhada) {
+        this.descricaoDetalhada = descricaoDetalhada;
     }
 }
