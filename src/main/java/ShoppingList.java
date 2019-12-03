@@ -90,6 +90,25 @@ public class ShoppingList {
         return percentagem * 100;
     }
 
+    //TESTE - Declarar Lista produtos 3 com 0 produtos
+
+    private List<Product> ProductList3 = new ArrayList<>();
+
+    public List<Product> getProductList3() {
+        return ProductList3;
+    }
+
+    public void setProductList3(List<Product> productList3) {
+        this.ProductList3 = productList3;
+    }
+
+
+    //buscar descrição detalhada
+    public String GetDescDet()
+    {
+        //nao entendo como ir buscar a descrição
+    }
+
 // construtores
 
     public ShoppingList(String name, User user) {
@@ -122,8 +141,8 @@ public class ShoppingList {
         return "Listname " + getName() + "\n" +
                 "TotalProdutos " + getTotalOfProducts() + "\n" +
                 "TotalProdutosNoCarrinho " + getTotalOfProductsOnShoppingCart() + "\n" +
-                "percentagemofComplete " + GetPercentageCompleted()
-
+                "percentagemofComplete " + GetPercentageCompleted() +
+                "DescricaoDetalhada" +  GetDescDet()
                 ;
     }
 }

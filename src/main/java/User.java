@@ -7,7 +7,7 @@ public class User
         return name;
     }
     public void setName(String name) {
-        name = name;
+        this.name = name;
     }
 
     // Email  ------------
@@ -27,7 +27,7 @@ public class User
         return userName;
     }
     public void setUserName(String userName) {
-        userName = userName;
+        this.userName = userName;
     }
 
     // Password  ------------
@@ -37,7 +37,7 @@ public class User
         return password;
     }
     public void setPassword(String password) {
-        password = password;
+        this.password = password;
     }
 
     // Morada  ------------

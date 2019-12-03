@@ -20,6 +20,17 @@ public class Product
         this.description = description;
     }
 
+    //DescricaoDetalhada
+
+    private String descriptionDetail;
+
+    public String getDescriptionDetail() {
+        return descriptionDetail;
+    }
+    public void setDescriptionDetail(String descriptionDetail) {
+        this.descriptionDetail = descriptionDetail;
+    }
+
     //imagem
     private String picture;
 
@@ -39,6 +50,17 @@ public class Product
 
     public void setCategory(Category category) {
         this.category = category;
+    }
+
+    //TESTE - adicionar classe brand a classe produto
+    private Brand brand;
+
+    public Brand getBrand() {
+        return brand;
+    }
+
+    public void setBrand(Brand brand) {
+        this.brand = brand;
     }
 
 //  nome e cor de classe categoria
@@ -75,11 +97,13 @@ public class Product
 
     //construtores
 
-    public Product(String name, String description, String picture, Category category, Double price, Double unityType) {
+    public Product(String name, String description, String descriptionDetail, String picture, Category category, Brand brand, Double price, Double unityType) {
         this.name = name;
         this.description = description;
+        this.descriptionDetail = descriptionDetail;
         this.picture = picture;
         this.category = category;
+        this.brand = brand;
         this.price = price;
         this.unityType = unityType;
     }
